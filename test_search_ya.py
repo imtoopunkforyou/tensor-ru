@@ -14,7 +14,7 @@ def close_browser():
 def test_search_input():
     """Тест, проверяющий наличие поля поиска"""
     browser.get(url)
-    browser.implicitly_wait(2)
+    time.sleep(5)
     search_input = browser.find_element_by_id("text")
     assert search_input, f'На странице {url} нет поля для поиска'
 
@@ -25,7 +25,7 @@ def test_suggest_window():
     search_input = browser.find_element_by_id("text")
     search_input.clear()
     search_input.send_keys(keywrd)
-    browser.implicitly_wait(2)
+    time.sleep(5)
     suggest_window = browser.find_elements_by_css_selector("ul.mini-suggest__popup-content")
     assert suggest_window, 'Таблица с подсказками не появилась'
 
@@ -37,7 +37,7 @@ def test_search_result():
     search_input.clear()
     search_input.send_keys(keywrd)
     search_input.send_keys(Keys.RETURN)
-    browser.implicitly_wait(2)
+    time.sleep(5)
     b_tags_set = browser.find_elements_by_tag_name("b")
     for link in b_tags_set:
         link = link.text

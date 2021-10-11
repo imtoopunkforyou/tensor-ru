@@ -7,7 +7,7 @@ browser = webdriver.Chrome(
 url = "https://yandex.ru"
 keywrd = "Тензор"
 
-def close_browser(): #for close the browser after testing
+def close_browser():
     browser.close()
     browser.quit()
 

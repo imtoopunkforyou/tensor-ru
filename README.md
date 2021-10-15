@@ -25,9 +25,9 @@ Test task for tensor.ru as a tester
 * При нажатии кнопки назад картинка изменяется на изображение из шага 6. Необходимо проверить, что это то же изображение.
 
 # Стэк
-* Python 3
-* Selenium Webdriver
-* Pytest
+— Python 3
+— Selenium Webdriver
+— Pytest
 
 
 

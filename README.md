@@ -26,7 +26,9 @@ Test task for tensor.ru as a tester
 
 # Стэк
 — Python 3
+
 — Selenium Webdriver
+
 — Pytest
 
 
